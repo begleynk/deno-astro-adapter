@@ -166,7 +166,7 @@ export default function createIntegration(args?: Options): AstroIntegration {
 
 				await esbuild.build({
 					target: 'esnext',
-					platform: 'browser',
+					platform: 'node',
 					entryPoints: [pth],
 					outfile: pth,
 					allowOverwrite: true,
